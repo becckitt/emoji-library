@@ -1,8 +1,8 @@
 'use strict';
 
-var phonecatApp = angular.module('phonecatApp', []);
+var emojiApp = angular.module('emojiApp', []);
 
-phonecatApp.controller('PhoneListCtrl', function($scope, $http) {
+emojiApp.controller('EmojiListCtrl', function($scope, $http) {
   $http.get('https://api.github.com/emojis').success(function(data) {
     var restructuredJson = [];
     for(var emoji in data) {

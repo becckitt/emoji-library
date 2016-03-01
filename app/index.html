@@ -1,20 +1,24 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="emojiApp">
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
+  <title>Emoji Library</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
+<!--   // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="PhoneListCtrl">
+<body ng-controller="EmojiListCtrl">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2">
-        Search: <input ng-model="query">
+    <div class="row search-form">
+        <h1>Em😎ji Library</h1>
+      <div class="search-input">
+        Search <input ng-model="query">
       </div>
-      <div class="col-md-10">
+    </div>
+    <div class="row">
+      <div class="emoji-body">
         <ul class="emojis">
           <li ng-repeat="emoji in emojis | filter:query">
             <img ng-src="{{emoji.link}}" alt="">
