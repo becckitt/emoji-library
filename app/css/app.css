@@ -1,0 +1,22 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+ul li {
+  width: 25%;
+  min-width: 64px;
+  height: 100px;
+}
+
+.emoji-name {
+  visibility: hidden;
+}

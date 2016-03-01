@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        Search: <input ng-model="query">
+      </div>
+      <div class="col-md-10">
+        <ul class="emojis">
+          <li ng-repeat="emoji in emojis | filter:query">
+            <img ng-src="{{emoji.link}}" alt="">
+            <span class="emoji-name">{{emoji.name}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
