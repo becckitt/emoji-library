@@ -18,14 +18,19 @@ ul {
 }
 
 ul li {
-  width: 25%;
+  width: 100px;
+  margin: 10px;
   min-width: 64px;
   height: 100px;
 }
 
 @media (max-width: 767px) {
   ul li {
-    width: 45%;
+    width: 75px;
+  }
+
+  .row .emoji-body {
+    padding: 10px;
   }
 }
 
@@ -47,9 +52,10 @@ ul li {
 }
 
 .emoji-body {
-  max-width: 800px;
   width: 100%;
-  padding: 40px;
+  padding: 70px;
+  padding-left: 90px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
