@@ -12,7 +12,10 @@ emojiApp.controller('EmojiListCtrl', function($scope, $http, $interval) {
     $scope.emojis = restructuredJson;
     $scope.randomEmoji = function() {
       return $scope.emojis[(Math.floor(Math.random() * $scope.emojis.length))];
-    }
-    $interval( function() {$scope.randomEmoji(); }, 2000);
+    };
+    $interval( function() {$scope.randomEmoji(); }, 1000);
+  });
+  $http.get('http://emojipedia.org/smiling-face-with-sunglasses/').success(function(data) {
+    debugger;
   });
 });
