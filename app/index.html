@@ -11,7 +11,7 @@
 <body ng-controller="EmojiListCtrl">
   <div class="container-fluid">
     <div class="row search-form">
-        <h1>Em<img ng-src="{{randomEmoji().link}}" alt="" width="30px">ji Library</h1>
+        <h1>Em<img ng-src="{{ changingEmoji.link }}" alt="" width="30px">ji Library</h1>
       <div class="search-input">
         Search <input ng-model="query">
       </div>
