@@ -1,5 +1,2 @@
-# emoji-library
-A fun and exciting*** new way to search for emojis using Github's emoji API.
-
-
-***Don't get too excited this took like five minutes to make
+# Emoji Library
+Did you know Github has an emoji API? I didn't. Well, until now. Here's a fancy way to navigate the API, impress your friends, watch an emoji masquerading as an o change endlessly as your eyes glaze over, etc.
